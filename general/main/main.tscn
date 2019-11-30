@@ -1,6 +1,46 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://general/main/main.gd" type="Script" id=1]
 
 [node name="main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 
+[node name="menu_layer" type="CanvasLayer" parent="."]
+
+[node name="menu" type="MarginContainer" parent="menu_layer"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1900.0
+margin_bottom = 1060.0
+
+[node name="panel" type="Panel" parent="menu_layer/menu"]
+margin_right = 1880.0
+margin_bottom = 1040.0
+
+[node name="scroll" type="ScrollContainer" parent="menu_layer/menu"]
+margin_right = 1880.0
+margin_bottom = 1040.0
+scroll_horizontal_enabled = false
+
+[node name="list" type="VBoxContainer" parent="menu_layer/menu/scroll"]
+margin_right = 1880.0
+margin_bottom = 1040.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="2d_test" type="Button" parent="menu_layer/menu/scroll/list"]
+margin_right = 1880.0
+margin_bottom = 20.0
+text = "2D Test"
+
+[node name="3d_test" type="Button" parent="menu_layer/menu/scroll/list"]
+margin_top = 24.0
+margin_right = 1880.0
+margin_bottom = 44.0
+text = "3D Test"
+
+[connection signal="pressed" from="menu_layer/menu/scroll/list/2d_test" to="." method="_on_2d_test_pressed"]
+[connection signal="pressed" from="menu_layer/menu/scroll/list/3d_test" to="." method="_on_3d_test_pressed"]

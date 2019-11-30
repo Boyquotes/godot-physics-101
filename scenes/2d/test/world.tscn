@@ -1,4 +1,17 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100, 100 )
 
 [node name="world" type="Node2D"]
+
+[node name="box" type="RigidBody2D" parent="."]
+position = Vector2( 980, 180 )
+
+[node name="polygon" type="Polygon2D" parent="box"]
+color = Color( 0.341176, 0.341176, 0.341176, 1 )
+polygon = PoolVector2Array( -100, -100, 100, -100, 100, 100, -100, 100 )
+
+[node name="shape" type="CollisionShape2D" parent="box"]
+shape = SubResource( 1 )
 
