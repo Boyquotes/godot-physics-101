@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://general/main/main.gd" type="Script" id=1]
+[ext_resource path="res://data/themes/menu_theme.tres" type="Theme" id=2]
 
 [node name="main" type="Control"]
 anchor_right = 1.0
@@ -15,6 +16,7 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = 1900.0
 margin_bottom = 1060.0
+theme = ExtResource( 2 )
 
 [node name="panel" type="Panel" parent="menu_layer/menu"]
 margin_right = 1880.0
@@ -33,13 +35,15 @@ size_flags_vertical = 3
 
 [node name="2d_test" type="Button" parent="menu_layer/menu/scroll/list"]
 margin_right = 1880.0
-margin_bottom = 20.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 0, 200 )
 text = "2D Test"
 
 [node name="3d_test" type="Button" parent="menu_layer/menu/scroll/list"]
-margin_top = 24.0
+margin_top = 204.0
 margin_right = 1880.0
-margin_bottom = 44.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 0, 200 )
 text = "3D Test"
 
 [connection signal="pressed" from="menu_layer/menu/scroll/list/2d_test" to="." method="_on_2d_test_pressed"]

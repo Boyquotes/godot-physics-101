@@ -6,6 +6,7 @@ extents = Vector2( 100, 100 )
 [node name="world" type="Node2D"]
 
 [node name="box" type="RigidBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 980, 180 )
 
 [node name="polygon" type="Polygon2D" parent="box"]
