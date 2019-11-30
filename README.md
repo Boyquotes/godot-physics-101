@@ -12,6 +12,8 @@ Since I started working with game engines, I have been interested in the impleme
 
 When running the project you'll get a welcome screen where you can choose one of the provided scenes. These encapsulate one aspect of Godots capabilities in simulating a physical world. You can start a scene, watch it running (or interacting with it) and read about its foundations in a description sidebar. There are scenes for 2D and 3D physics.
 
+Examples are written for Godot 3.1 stable. I will soon update to Godot 3.2 as it gets its stable release.
+
 ## Overview
 
 - **General**
@@ -36,7 +38,7 @@ Here is a list of projects, which I will use as a basis for the compilation of e
 - [Box2D Manual](http://box2d.org/manual.pdf)
 - [Unity Physics Docs](https://docs.unity3d.com/Manual/PhysicsSection.html)
 - [Unreal Physics Docs](https://docs.unrealengine.com/en-US/Engine/Physics/index.html)
--[CryEngine Physics Docs](https://docs.cryengine.com/display/CEMANUAL/Physics)
+- [CryEngine Physics Docs](https://docs.cryengine.com/display/CEMANUAL/Physics)
 
 ### Examples lists
 
