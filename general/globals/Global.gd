@@ -9,6 +9,8 @@ func _ready():
 	retrieve_scenes_list()
 	print(scenes_list)
 
+#TODO: Redo that so it searches for a .json file and there you can set: 
+# full name, description, tags and so on
 func retrieve_scenes_list():
 	categories = get_directories("res://scenes")
 	for category in categories:
