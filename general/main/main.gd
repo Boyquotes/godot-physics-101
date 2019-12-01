@@ -1,10 +1,19 @@
 extends Control
 
-func _on_2d_test_pressed():
-	load_a_scene("res://scenes/2d/test/world.tscn")
+onready var scene_button = preload("res://general/main/scene_button.tscn")
 
-func _on_3d_test_pressed():
-	load_a_scene("res://scenes/3d/test/world.tscn")
+func _ready():
+	# Generate a button for each scene
+	for scene in Global.scenes_list.keys():
+		var new_scene_button = scene_button.instance()
+		new_scene_button.name = scene + "_button"
+		new_scene_button.text = scene
+		new_scene_button.scene_path = Global.scenes_list[scene].get("path")
+		$menu_layer/menu/scroll/list.add_child(new_scene_button)
+		new_scene_button.connect("_on_load_scene", self, "_on_scene_button_pressed")
+
+func _on_scene_button_pressed(scene_path):
+	load_a_scene(scene_path)
 
 func load_a_scene(scene_path):
 	if Global.scene_loaded:

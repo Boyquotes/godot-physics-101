@@ -18,6 +18,7 @@ Examples are written for Godot 3.1 stable. I will soon update to Godot 3.2 as it
 
 - **General**
   - *[Main]* - The main window for choosing the scenes
+  - *[Overlay]* - An UI overlay for every scene
   - *[Settings]* - A window to quickly change some settings
   - *[Documentation]* - A quick link to the docs for every concept
 - **2D**
@@ -55,6 +56,10 @@ Here is a list of projects, which I will use as a basis for the compilation of e
 - [Ammo.js](https://github.com/kripken/ammo.js#demos)
 - [Oimo.js Demos](https://github.com/lo-th/Oimo.js#demo) and [Oimo.js Web](http://lo-th.github.io/Oimo.js/#basic)
 - [nphysics (2D)](https://www.nphysics.org/demo_all_examples2/) and [nphysics (2D)](https://www.nphysics.org/demo_all_examples3/)
+
+### Learning platforms
+
+- [Leifiphysik](https://www.leifiphysik.de/) (German)
 
 ## FAQ
 

@@ -7,6 +7,9 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="menu_layer" type="CanvasLayer" parent="."]
 
@@ -32,19 +35,3 @@ margin_right = 1880.0
 margin_bottom = 1040.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="2d_test" type="Button" parent="menu_layer/menu/scroll/list"]
-margin_right = 1880.0
-margin_bottom = 200.0
-rect_min_size = Vector2( 0, 200 )
-text = "2D Test"
-
-[node name="3d_test" type="Button" parent="menu_layer/menu/scroll/list"]
-margin_top = 204.0
-margin_right = 1880.0
-margin_bottom = 404.0
-rect_min_size = Vector2( 0, 200 )
-text = "3D Test"
-
-[connection signal="pressed" from="menu_layer/menu/scroll/list/2d_test" to="." method="_on_2d_test_pressed"]
-[connection signal="pressed" from="menu_layer/menu/scroll/list/3d_test" to="." method="_on_3d_test_pressed"]
