@@ -16,8 +16,11 @@ _global_script_class_icons={
 [application]
 
 config/name="Godot Physics 101"
+config/description="Just some basic physics examples."
 run/main_scene="res://general/main/main.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://data/backgrounds/splash_screen.png"
+config/icon="res://data/icons/godot_physics_101.png"
+config/windows_native_icon="res://data/icons/godot_physics_101.ico"
 
 [autoload]
 
